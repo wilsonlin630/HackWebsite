@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
+<head>
+ <title>Navigator</title>
+<style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+
+.sideNavigator {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #F5F5DC;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sideNavigator a {
+  padding: 6px 6px 6px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+}
+
+.sideNavigator a:hover:not(.active) {
+  background-color: #333;
+}
+
+.sideNavigator a.active {
+  background-color: red;
+  color: white;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 500px;
+  height: 500px;
+}
+
+@media screen and (max-height: 450px) {
+  .sideNavigator {padding-top: 15px;}
+  .sideNavigator a {font-size: 18px;}
+}
+</style>
+</head>
+
+<body>
+<div class="sideNavigator">
+<form>
+<input placeholder="Search..." style="margin: 10px 60px"></input>
+</form>
+    <h2 style = "margin: 0px 15px">Bathrooms</h2>
+    <a href="#"> Closest bathroom </a>
+    <h2 style = "margin: 0px 15px">Ballroom</h2>
+    <a href="#"> Ballroom </a>
+    <h2 style = "margin: 0px 15px">Food</h2>
+    <a href="#"> Woody's Tavern </a>
+</div>
+
+<div class="mainPage"> 
+    <h2 style = "text-align: center">Welcome to the Union! Please select your destination.</h2>
+    <img src="hotdog.png" class="center"></img>
+    
+    
+</div>
+
+</body>
+</html>
