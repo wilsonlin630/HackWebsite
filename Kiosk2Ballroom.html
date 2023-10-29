@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" mainSize="width=device-width, initial-scale=1">
  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> 
-<head>
  <title>Navigator</title>
 <style>
 body {
@@ -18,7 +17,7 @@ body {
   top: 0;
   left: 0;
   background-color: #F5F5DC;
-  overflow-x: hidden;
+  overflow-x: auto;
   padding-top: 20px;
 }
 
@@ -42,35 +41,71 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 500px;
-  height: 500px;
+  width: 575px;
+  height: 575px;
 }
 
 @media screen and (max-height: 450px) {
   .sideNavigator {padding-top: 15px;}
   .sideNavigator a {font-size: 18px;}
 }
+
+div.mainSize {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sideNavigator {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sideNavigator a {float: left;}
+  div.mainSize {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sideNavigator a {
+    text-align: center;
+    float: none;
+  }
+  
+  .search{
+.searchBar{
+    display: block;
+    margin-right:auto;
+    margin-left:auto;
+    width:300px; /* Set this based on the size of the text box you are using */
+}
+
+}
 </style>
-</head>
 
 <body>
 <div class="sideNavigator">
 <form>
+<div class ="searchbar">
 <input placeholder="Search..." style="margin: 10px 60px"></input>
+</div>
 </form>
-    <h2 style = "margin: 0px 15px">Bathrooms</h2>
-    <a href="Kiosk2Bathroom.html"> Closest bathroom </a>
-    <h2 style = "margin: 0px 15px">Ballroom</h2>
+    <br/>
+      <h2 style = "margin: 0px 15px">Rooms</h2>
+    <a href="Kiosk2Bathroom.html"> Bathroom </a>
+<!--     <h2 style = "margin: 50px 15px">Ballroom</h2> -->
     <a href="Kiosk2Ballroom.html"> Ballroom </a>
-    <h2 style = "margin: 0px 15px">Food</h2>
+    <!--  <h2 style = "margin: 100px 15px">Food</h2> -->
     <a href="Kiosk2Woodys.html"> Woody's Tavern </a>
+    <br/>
 </div>
 
-<div class="mainPage"> 
-    <h2 style = "text-align: center">Welcome to the Union! Please select your destination.</h2>
-    <img src="hotdog.png" class="center"></img>
-    
-    
+<div class="mainSize"> 
+    <h2 style = "text-align: center">Directions to Ballroom.</h2>
+        <p style = "text-align: center">Floor 1</p>
+    <img src="2toballroompic1.png" class="center"></img>
+        <p style = "text-align: center">Floor 2</p>
+    <img src="2toballroompic2.png" class="center"></img>
 </div>
 
 </body>
